@@ -132,6 +132,9 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 
 //Code Here
 
+var divider = (numbersArray) => {
+  return [numbersArray.filter(i => i%2===0), numbersArray.filter(i => i%2===1)]
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -153,7 +156,9 @@ var getRandomArbitrary = function() {
 
 //Code Here
 
-
+var finder = (arr) => {
+  return arr.includes(getRandomArbitrary())
+}
 
 ////////// PROBLEM 8 //////////
 
@@ -182,7 +187,7 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
 //Code Here
 
-
+var removeItem
 
 ////////// PROBLEM 9 //////////
 
