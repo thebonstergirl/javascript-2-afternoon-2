@@ -188,15 +188,16 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //Code Here
 
 var removeItem = (myGroceryList, item) => {
+  var newArr = [];
   for (let i = 0; i < myGroceryList.length; i++){
     if (myGroceryList[i]===item){
-      myGroceryList.splice(i, 1)
-      return myGroceryList;
+      newArr = myGroceryList.splice(i, 1);
     }
     else {
-      return myGroceryList;
+      newArr = myGroceryList;
     }
   }
+  return newArr;
 }
 
 var addItem = (myGroceryList, item) => {
@@ -216,7 +217,13 @@ var addItem = (myGroceryList, item) => {
 */
 
 //Code Here
-
+var maker = () => {
+  var newArr = [];
+  for (let i = 1; i <= 215; i++){
+    newArr.push(i);
+  }
+  return newArr;
+}
 
 
 ////////// PROBLEM 10 //////////
@@ -233,6 +240,9 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
   
 //Code Here
 
+var addTen = (numbers) => {
+  return numbers.map(i => Number(i) + 10);
+}
 
 
 ////////// PROBLEM 11 //////////
@@ -258,7 +268,16 @@ for(var i = 0; i < num2; i++){
 
 //Code Here
 
-
+var longer = (arr1, arr2) => {
+  var newArr = [];
+  if (arr1.length > arr2.length){
+     newArr = arr1;
+  }
+  else if (arr2.length > arr1.length){
+    newArr = arr2;
+  }
+  return newArr;
+}
 
 /*
   As a continuation of the previous problem, write another function called 'both'.
