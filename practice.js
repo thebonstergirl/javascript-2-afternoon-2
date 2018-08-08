@@ -187,9 +187,29 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
 //Code Here
 
-var removeItem
+var removeItem = (myGroceryList, item) => {
+  for (let i = 0; i < myGroceryList.length; i++){
+    if (myGroceryList[i]===item){
+      myGroceryList.splice(i, 1)
+      return myGroceryList;
+    }
+    else {
+      return myGroceryList;
+    }
+  }
+}
 
-////////// PROBLEM 9 //////////
+var addItem = (myGroceryList, item) => {
+  for (let i = 0; i < myGroceryList.length; i++){
+    if (myGroceryList[i]===item){
+      return myGroceryList;
+    }
+    else {
+      return myGroceryList.push(item);
+    }
+  }
+}
+////////// PROBLEM 9 //////////`
 
 /*
   Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
